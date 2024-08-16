@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* home.html */
+*{
+  margin: 0px;
+  font-family: Roboto;
+
+  
+}
+@keyframes trans {
+  0% {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+body
+{
+  background-color:  #e0e0d7;
+}
+.body
+{
+  animation: 0.5s ease-out 0s 1 trans;
+}
+
+
+
+.navbar{
+  height: 80px;
+  background-color: #503070;
+  align-items: center;
+  font-family: Lato;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+  box-shadow: 0px 0px 10px black;
+}
+
+.navlinks{
+  margin-right: 10px;
+}
+
+.navlinks a
+{
+  display: inline-block;
+
+}
+
+.navlinks a:link, a:visited, a:active{
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  font-size:18px;
+  padding:30px 10px;
+  opacity: 65%;
+}
+
+#pointer
+{
+  opacity: 100%
+}
+
+.sidebarbutton a:link, a:visited, a:active{
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.sidebar
+{
+  top: 0;
+  right: -150px;
+  width: 150px;
+  position: fixed;
+  background-color: #503070;
+  font-family: Lato;
+  height: 100vh;
+  transition: 0.5s;
+  text-align: right;
+  box-shadow: 5px 5px 10px black;
+  overflow-y:  hidden;
+}
+
+
+.sidebar a:link, a:visited, a:active{
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.sidebar a:hover{
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.1s;
+  transform: translateY(-3px);
+
+}
+
+.navlinks a:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+  transform: translateY(-3px);
+
+
+}
+
+.sidebarbutton a:hover{
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebarbutton:hover .dropdownstuff{
+  display: block;
+
+}
+
+.sidebarbutton{
+  display: none;
+  padding: 30px 20px;
+  position: relative;
+}
+
+
+
+
+ @media (max-width: 950px) {
+  .navlinks     { display: none; }
+  .sidebarbutton{display: inline-flex; }
+
+}
+
+.fa-bars
+{
+  color: white;
+  cursor: pointer;
+}
+
+.fa-times
+{
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.3s;
+  left: 10px;
+  padding: 8px;
+  margin-right: 12px;
+  margin-bottom: 10px;
+}
+
+.xbutton
+{
+  width: inherit;
+  text-align: right;
+}
+
+.fa-times:hover
+{
+  color: rgba(255, 255, 255, 1);
+  transition: 0.3s;
+}
+
+.logoandtitle
+{
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.logoandtitle h1
+{
+  color: white;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 5px;
+}
+
+.bio{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.biotext
+{
+  margin-left : 80px;
+  margin-right : 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
+
+.pic {
+  max-width: 800px;
+  margin: auto;
+}
+
+.pic img{
+  
+  height: auto;
+  width: 100%;
+}
+
+.profilepic
+{
+  margin-left : 80px;
+  margin-right : 40px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.profilepic img{
+  width: 200px;
+}
+
+.MASpics{
+
+  margin: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.MASpics img{
+  width: 300px;
+  height: auto;
+  margin: 3px;
+}
+
+
+.biotext h1, h3, h4
+{
+  font-family: Roboto;
+  font-weight: lighter;
+}
+
+.biotext h3
+{
+  line-height: 30px;
+}
+
+.button a:link, a:visited, a:active{
+  font-family: Roboto;
+  text-decoration: none;
+  background-color: #503070;
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
+  transition: 0.2s;
+  -moz-box-shadow:    inset 0 0 10px white;
+   -webkit-box-shadow: inset 0 0 10px white;
+   box-shadow:         inset 0 0 10px white;
+
+
+}
+
+
+.button a:hover
+{
+  color: #503070;
+  border: 2px #503070 solid;
+  background-color: white;
+  transition: 0.2s;
+}
+
+.wordcloud
+{
+
+  margin: auto;
+  margin-bottom: 40px;
+
+}
+.wordcloud img
+{
+  width: 68%;
+  height: auto;
+  margin: auto;
+  display: block;
+}
+
+.list
+{
+  width: 70%;
+  margin: auto;
+  
+}
+
+.list h1, h2
+{
+  font-family: Roboto;
+  font-weight: lighter;
+  padding: 15px;
+}
+
+.list li{
+  font-family: Roboto;
+  line-height: 30px;
+}
+
+.list .button
+{
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.list h3{
+  font-family: Roboto;
+  padding: 15px;
+}
+
+.textwithlinks a{
+  text-decoration: underline;
+  color: black;
+}
+
+.quote
+{
+  font-family: Roboto;
+  margin: 80px;
+  text-align: center;
+}
+
+/* research.html */
+
+.header
+{
+  font-family: Roboto;
+  text-align: center;
+  color: #000C59;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  font-size: 22px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.researchdesc
+{
+  font-family: Roboto;
+  width: 70%;
+  margin: auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.28);
+}
+
+.accordion
+{
+  width: 70%;
+  margin: 40px auto;
+}
+
+.accordion-item
+{
+  background-color: #D9D9D9;
+  color: black;
+  margin: 10px 0;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: Roboto;
+
+}
+
+.accordion-item-header
+{
+  font-weight:
+  bold; display: flex;
+  cursor: pointer;
+  align-items: center;
+  position: relative;
+}
+
+.accordion-item-header::after{
+  content: "+";
+  font-size: 20px;
+  position: absolute;
+  right: 0px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-item-header.active::after
+{
+  transform: rotate(45deg);
+}
+
+.accordion-item-body
+{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item-body-content
+{
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.accordion-item-body-content img
+{
+    padding: 15px;
+}
+
+.researchlogos
+{
+  display:flex;
+  margin: auto;
+  width: 400px;
+  justify-content: center;
+}
+
+.researchlogos img
+{
+  padding: 100px;
+}
